@@ -1,0 +1,18 @@
+#board div {
+  width: 120px;
+  height: 120px;
+  box-sizing: border-box;
+  border: solid 3px black;
+  margin: 3px;
+
+  font-size: 3em;
+  text-align: center;
+  line-height: 120px;
+  vertical-align: middle;
+
+  float: left;
+}
+
+#board div:nth-child(3n+1) { /* Literally 'N'th child, eg. to add 3rd one + 1 so 3n+1 lo */ 
+  clear: left;
+}

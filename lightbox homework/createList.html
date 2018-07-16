@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+ <title>My Blog</title>
+	<style>
+		#elusiveButton{
+			padding: 20px;
+			background-color: red;
+			color: white;
+			border: 2px solid black;
+			font-size: 30px;
+		}
+
+		.done {
+			font-size: 200px;
+
+		}
+
+	</style>
+</head>
+
+<body>
+	
+ 		<input id='textField' type='text' placeholder="Dare you to type on me >:)">
+ 	
+ 		<button class='btn'>
+ 			Submit
+ 		</button>
+	
+	<ul id="list">
+ 	
+ 	</ul>
+
+</body>
+
+<script>
+
+const tF = document.getElementById ('textField');
+const btn = document.getElementsByClassName('btn')[0];
+const list = document.getElementById('list');
+
+btn.onclick = function(){
+	if (tF.value.trim().length != ""){
+	const value = tF.value;
+	
+	const li = document.createElement('li');
+	
+	li.innerHTML = tF.value;
+	list.prepend(li);
+
+	}
+else {
+	alert("You're supposed to type something")
+}
+	tF.value = "";
+}
+
+</script>
+
+</html>

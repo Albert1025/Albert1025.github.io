@@ -1,0 +1,26 @@
+button {
+	width:100px;
+	height: 100px;
+	cursor: pointer;
+	position: relative;
+	bottom: 0;
+	display: inline-block;
+	
+}
+
+
+p {
+	display: inline-block;
+	top: 100px;
+}
+
+
+.grid-item {
+  float: right;
+  width: 180px;
+  height: 160px;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+
+.grid-item--width2 { width: 160px; }
+.grid-item--height2 { height: 140px; }

@@ -1,0 +1,113 @@
+header, article, section, footer, aside, h3 {
+	box-sizing: border-box;
+	padding: 10px;
+	font-family: 'Heebo', sans-serif;
+	margin: auto;
+	color: white;
+}
+
+.main-header {
+	color: #f29191;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-family: 'Cantarell';
+	
+}
+
+article header img {
+	width: 300px;
+}
+
+body {
+	background-image: url('https://i1.wp.com/freshimports.org/wp-content/uploads/2016/04/background-horizontal-dark-wood.jpeg');
+	color: #b76868;
+}
+
+header nav {
+	border: 2px solid black;
+}
+
+
+
+nav ul {
+	padding-left: 0;
+	align-self: center;
+}
+
+nav {
+	background-color: gray;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-left: 16px;
+	margin-right: 16px;
+	transition: all 1s;
+	/* ;) */
+}
+
+nav ul li:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.article-blocks {
+	max-width: 570px;
+	width: 100%;
+	float: left;
+	border: 1px solid black;
+	display: inline-block;
+	background-color: rgba(89, 37, 37, 0.5);
+}	
+
+@media(max-width: 480px) {
+	.article-blocks{
+		display: block;
+	}
+}
+aside {
+	max-width: 300px;
+	width: 30%;
+	border: 1px solid pink;
+	display: inline-block;
+	background-color: rgba(89, 37, 37, 0.5)
+}
+
+@media(max-width: 825px) {
+	aside{
+		width: 100%;
+		max-width: 550px
+	}
+}
+
+.container {
+	width: 100%;
+	max-width: 870px;
+	margin: 0 auto;
+	border: 2px solid black;
+	box-sizing: border-box;
+	clear: both;
+}
+
+
+.article-footer {
+	text-align: center;
+}
+
+.OOR {
+	display: inline-block;
+}
+
+
+@media (max-width: 570px){
+	.OOR {
+		width: 490px;
+		height: 276px;
+	}
+}
+
+.social {
+	padding: 1em;
+}
+
